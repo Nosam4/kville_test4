@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // ✅ Serve from root for custom domain
+  base: '/', // exact match for root-level custom domain
 })
