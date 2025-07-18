@@ -111,7 +111,7 @@ function PlayerInput({ onPlayerGuess, playerData, difficulty, guesses, disabled 
             onClick={handleInputClick}
             onKeyDown={handleKeyDown}
             disabled={disabled}
-            className="px-3 py-0.5 text-base rounded-lg bg-white/10 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/50 transition"
+            className="px-3 py-0.1 text-base rounded-lg bg-white/10 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/50 transition"
 
           />
         </form>
