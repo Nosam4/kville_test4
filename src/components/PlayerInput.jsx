@@ -94,9 +94,10 @@ function PlayerInput({ onPlayerGuess, playerData, difficulty, guesses, disabled 
       const filtered = getFilteredPlayers().slice(0, 100)
       setSuggestions(filtered)
       setShowSuggestions(true)
-      inputRef.current?.focus()
+      // Removed inputRef.current.focus() to prevent keyboard from opening
     }
   }
+  
 
   return (
     <div className="mb-8 relative">
@@ -111,15 +112,14 @@ function PlayerInput({ onPlayerGuess, playerData, difficulty, guesses, disabled 
             onClick={handleInputClick}
             onKeyDown={handleKeyDown}
             disabled={disabled}
-            className="w-full min-w-[150px] min-h-[40px] py-2 px-3 text-base rounded-lg bg-white/10 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/50 transition"
-
+            className="w-full px-5 py-3 text-base rounded-xl bg-white/10 border-2 border-white/30 text-white placeholder-white/60 focus:outline-none focus:border-green-400 focus:ring-2 focus:ring-green-200 transition"
           />
         </form>
         <button
           onClick={toggleDropdown}
           disabled={disabled}
-          className="w-full min-w-[150px] min-h-[40px] py-2 px-3 text-base rounded-lg bg-white/10 border border-white/30 text-white hover:bg-white/20 hover:border-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/50 transition"
-                    >
+          className="px-5 py-3 text-xl rounded-xl bg-white/10 border-2 border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition"
+        >
           {showSuggestions ? '↑' : '↓'}
         </button>
       </div>
