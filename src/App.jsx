@@ -113,8 +113,7 @@ function App() {
             <p className="font-semibold">🕹️ How to Make a Guess:</p>
             <ol className="pl-5 list-decimal mt-1">
               <li>Click the dropdown arrow <strong>(↓)</strong> or type in the player name</li>
-              <li>Click on a name from the grid to select</li>
-              <li>Click <strong>SUBMIT</strong> to lock in your guess</li>
+              <li>Click on a name from the grid to <em>Guess!</em></li>
             </ol>
           </div>
           <div>
