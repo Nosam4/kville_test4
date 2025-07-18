@@ -111,15 +111,15 @@ function PlayerInput({ onPlayerGuess, playerData, difficulty, guesses, disabled 
             onClick={handleInputClick}
             onKeyDown={handleKeyDown}
             disabled={disabled}
-            className="px-3 py-0.1 text-base rounded-lg bg-white/10 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/50 transition"
+            className="w-full min-w-[150px] min-h-[40px] py-2 px-3 text-base rounded-lg bg-white/10 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/50 transition"
 
           />
         </form>
         <button
           onClick={toggleDropdown}
           disabled={disabled}
-          className="px-4 py-2 text-sm sm:text-base rounded-xl bg-white/10 border-2 border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition"
-          >
+          className="w-full min-w-[150px] min-h-[40px] py-2 px-3 text-base rounded-lg bg-white/10 border border-white/30 text-white hover:bg-white/20 hover:border-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/50 transition"
+                    >
           {showSuggestions ? '↑' : '↓'}
         </button>
       </div>
